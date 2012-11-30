@@ -1,0 +1,136 @@
+<!DOCTYPE html>	
+<html lang="en">
+	<head>
+		<title>Face Detection</title>
+		<style type="text/css" rel="stylesheet">
+			* {
+				font-family: 'Droid Sans', sans-serif;
+			}
+
+			body {
+				background-image: url('http://mitdi2013.pes.edu/img/bg-pattern.png');
+			}
+
+			#wrapper {
+				width: 960px;
+				margin: auto;
+			}
+
+			header {
+				width: inherit;
+				height: 100px;
+				text-align: center;
+				font-size: 30px;
+				font-weight: bolder;
+				font-family: 'Kaushan Script', cursive;
+			}
+
+			form {
+				width: inherit;
+				height: 200px;
+				margin: auto;
+				display: block;
+				margin-top: 50px;
+			}
+
+			#upload-photo {
+				width: inherit;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+				margin-top: 80px;
+				font-family: 'Kaushan Script', cursive;
+			}
+
+			#wrap {
+				position: relative;
+				left: 300px;
+				width: 400px;
+				margin: auto;
+				padding: 50px;
+				-webkit-border-radius: 20px;
+    			border-radius: 20px;
+    			background-color: #FFFFFF;
+    			-webkit-box-shadow:  0px 0px 8px 3px rgba(0, 0, 0, 0.4);
+        		box-shadow:  0px 0px 8px 3px rgba(0, 0, 0, 0.4);
+        		-webkit-transition: background 1000 ease;
+				-moz-transition: background 1000 ease;
+		        -ms-transition: background 1000 ease;
+		        -o-transition: background 1000 ease;
+				transition: background 1000 ease;
+			}
+
+			#wrap:hover {
+				background-color: #CDEBFA;
+			}
+
+			input {
+				display: block;
+				width: 180px;
+				margin: auto;
+				height: 30px;
+				/*-webkit-border-radius: 10px;
+  				-moz-border-radius: 10px;*/
+			}
+
+			#about {
+				width: 500px;
+				height: 430px;
+				background-color: #FFFFFF;
+				position: fixed;
+				top: 110px;
+				left: 100px;
+				-webkit-border-radius: 20px;
+    			-webkit-transition: left 1000ms ease;
+				-webkit-box-shadow:  0px 0px 8px 3px rgba(0, 0, 0, 0.4);
+				-moz-transition: left 1000ms ease;
+		        -ms-transition: left 1000ms ease;
+		        -o-transition: left 1000ms ease;
+				transition: left 1000ms ease;
+				padding: 15px;
+			}
+
+		</style>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>Face Detection</header>
+			<div id="wrap">
+				<div id="upload-photo">Upload Photograph</div>
+					<form action="upload" method="post" enctype="multipart/form-data">
+						<input type="file" name="file" id="file-upload" value="Upload Photo" />
+						<br/>
+						<input class="button" id="submit-button" type="submit" name="submit" value="Submit" />
+					</form>
+			</div>
+			<div id="about">
+				 <b>Guided By :</b>
+				 <pre>                       Dr. Kavi Mahesh</pre>
+
+				 <b>Created By :</b>
+				 <pre>                       Vijay Mahantesh SM
+		       1PI09CS118
+		       Computer Science Dept
+		       PES Institute of Technology
+		       Bangalore</pre>
+
+				 <b>About the project :</b>
+				 <pre>
+  Face detection is a well known problem in the world of Computer 
+Vision and Machine Learning. I have mainly used <a href="http://www.simplecv.org" target="_new"> SimpleCV(Computer
+Vision library in Python) </a>, <a href="http://flask.pocoo.org/" target="_new">Flask (Microframework for web development)</a> 
+and <a href="http://aws.amazon.com/" target="_new"> Amazon web services</a> for hosting my project. Face detection is
+achieved using a Haar classifier. This is a type of wavelet classifier which 
+is trained to detect faces fast and efficiently. It will iterate over the 
+image to find faces on different scales.
+				 </pre>
+				 
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>
